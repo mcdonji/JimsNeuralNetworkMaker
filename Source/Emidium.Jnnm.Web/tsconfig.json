@@ -1,0 +1,14 @@
+﻿{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "experimentalDecorators": true
+  },
+  "files": [
+    "Scripts/app/main.ts",
+    "Scripts/app/app.component.ts"
+  ]
+}

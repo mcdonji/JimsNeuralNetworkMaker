@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Emidium Jim's Neural Network Maker</title>
+    <script src="/Scripts/mathboxbuild/mathbox-bundle.js"></script>
+    <link rel="stylesheet" href="/Scripts/mathboxbuild/mathbox.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/nnm")
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li>@Html.ActionLink("Visualizer", "Index", "Home")</li>
+        <li>@Html.ActionLink("NeuralNetworkMaker", "Index", "NeuralNetworkMaker")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+    </ul>
+</div>
+<div class="clear"></div>
+<hr/>
+<div>
+@RenderBody()
+</div>
+
+
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</body>
+</html>

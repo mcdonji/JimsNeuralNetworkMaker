@@ -1,0 +1,241 @@
+﻿<div>
+    <table>
+        <tr>
+            <td>
+                <input id="nnSpecInput" name="nnSpecInput" />
+                <input type="button" id="nnSpecPoofButton" name="nnSpecPoofButton" value="Poof" />
+            </td>
+        </tr>
+    </table>
+    <h1>Visualizer </h1>
+    <table>
+        <tr>
+            <td>Function :</td>
+            <td><input id="xzFunc" name="xzFunc"/></td>
+            <td><input type="button" value="GO" onclick="SetFunction();" /></td>
+            <td>NeuralNetwork :</td>
+            <td><input id="nnNameInput" name="nnNameInput" /></td>
+            <td><input type="button" value="GO" onclick="SetNeuralNetwork();" /></td>
+        </tr>
+        <tr>
+            <td>
+                X Start :
+            </td>
+            <td>
+                <input id="xStart" name="xStart"/>
+            </td>
+            <td>
+                X End :
+            </td>
+            <td>
+                <input id="xEnd" name="xEnd"/>
+            </td>
+            <td>X Walk :</td>
+`            <td><input id="xWalk" name="xWalk"/></td>
+        </tr>
+        <tr>
+            <td>
+                Y Start :
+            </td>
+            <td>
+                <input id="yStart" name="yStart"/>
+            </td>
+            <td>
+                Y End :
+            </td>
+            <td>
+                <input id="yEnd" name="yEnd"/>
+            </td>
+            <td>Y Walk :</td>
+            <td><input id="yWalk" name="yWalk"/></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    $(function() {
+        LoadNeuralNetworkMaker.poof();
+    });
+
+    function Go() {
+        var funcStart = "xzFunc = function(x, z, i, j, t) { ";
+        var bla = $('#xzFunc').val();
+        var funcBody = "var y = " + bla + ";";
+        var funcEnd = "return y; } ";
+        var theFunc = funcStart + funcBody + funcEnd;
+        eval(theFunc);
+    }
+
+    var xzFunc = function (x, z, i, j, t) {
+        var y = remap(Math.sin(x * 5 + t + Math.sin(z * 3.41 + x * 1.48)))
+            * remap(Math.sin(z * 5 + t + Math.cos(x * 3.22 + z)));
+        //        var y = x + z;
+        return y;
+    }
+
+
+    mathbox = mathBox({
+        plugins: ['core', 'controls', 'cursor'],
+        controls: {
+            klass: THREE.OrbitControls
+        },
+    });
+    three = mathbox.three;
+
+    three.camera.position.set(2.3, 1, 2);
+    three.controls.maxDistance = 5;
+    three.renderer.setClearColor(new THREE.Color(0xFAFAF8), 1.0);
+
+    view = mathbox
+        .set({
+            scale: 360
+        })
+        .cartesian({
+            range: [[0, 1], [0, 1], [0, 1]],
+            scale: [1, 1, 1],
+        });
+
+    var colors = {
+        x: 0xFF4136,   // red
+        y: 0xFFDC00,   // yellow
+        z: 0x0074D9,   // blue
+        xy: 0xFF851B,  // orange
+        xz: 0xB10DC9,  // purple
+        yz: 0x2ECC40,  // green
+        xyz: 0x654321, // brown
+    }
+
+    view.scale({
+            divide: 3,
+            origin: [0, 0, 1, 0],
+            axis: "x",
+        })
+        .text({
+            live: false,
+            data: ["X0", 1, 2]
+        })
+        .label({
+            color: colors.x,
+        });
+
+    view.scale({
+            divide: 3,
+            origin: [0, 0, 1, 0],
+            axis: "y",
+        })
+        .text({
+            live: false,
+            data: ["Y0", 1, 2]
+        })
+        .label({
+            color: colors.y,
+            offset: [-16, 0]
+        });
+
+    view.scale({
+            divide: 3,
+            origin: [1, 0, 0, 0],
+            axis: "z",
+        })
+        .text({
+            live: false,
+            data: ["Z0", 1, 2]
+        })
+        .label({
+            color: colors.z,
+            offset: [16, 0]
+        });
+
+
+    view.grid({
+            axes: "xy",
+            divideX: 3,
+            divideY: 3
+        })
+        .grid({
+            axes: "xz",
+            divideX: 3,
+            divideY: 3,
+        })
+        .grid({
+            axes: "yz",
+            divideX: 3,
+            divideY: 3,
+        });
+
+    var n = 5432; // number of data points
+    view.array({
+        id: 'data',
+        width: n,
+        items: 1,
+        channels: 3, // 3 spacial dimensions
+        live: false,
+        expr: function (emit) {
+            var x = Math.random();
+            var z = Math.random();
+            emit(x, x + z, z);
+        },
+    }).point({
+        color: 0x222222,
+        size: 12,
+    });
+
+    view.swizzle({
+        source: '#data',
+        order: "xyww"
+    }).point({
+        color: colors.xy,
+        size: 7,
+    });
+
+    view.swizzle({
+        source: '#data',
+        order: "xwzw"
+    }).point({
+        color: colors.xz,
+        size: 7,
+    });
+
+    view.swizzle({
+        source: '#data',
+        order: "wyzw"
+    }).point({
+        color: colors.yz,
+        size: 7,
+    });
+
+    view.transform({
+        position: [0, 1.01, 0],
+    }).swizzle({
+        source: '#data',
+        order: "xwww"
+    }).point({
+        color: colors.x,
+        size: 7,
+    });
+
+    view.transform({
+        position: [1.01, 0, 0],
+    }).swizzle({
+        source: '#data',
+        order: "wyww"
+    }).point({
+        color: colors.y,
+        size: 7,
+    });
+
+    view.transform({
+        position: [0, 1.01, 0],
+    }).swizzle({
+        source: '#data',
+        order: "wwzw"
+    }).point({
+        color: colors.z,
+        size: 7,
+    });
+
+
+</script>

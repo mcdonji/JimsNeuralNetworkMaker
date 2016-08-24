@@ -1,0 +1,91 @@
+﻿@model dynamic
+<script type="text/javascript">
+    $(function () {
+        var network =  
+        {
+            otype:"Network",
+            name: "Nice Neural Network",
+            layers: []
+        }
+
+        var createLayer = function (layerNumber, isInputLayer, isOutputLayer) {
+            return {
+                otype: "Layer",
+                name: "layer" + layerNumber,
+                nodes: [],
+                isInput: isInputLayer,
+                isOutput: isOutputLayer
+            }
+        }
+
+        $("#layerDraggable").draggable({
+            cursor: 'move',
+            helper: draggableLayerHelper
+        });
+        $("#nodeDraggable").draggable({
+            cursor: 'move',
+            helper: draggableNodeHelper
+        });
+        $('#droppableNetwork').droppable();
+        $('#droppableNetwork').droppable({
+            drop: handleDropOnNetworkEvent
+        });
+
+
+        function draggableLayerHelper(event) {
+            return '<div id="draggableLayerHelper">  I am a layer - drag me to the Network!</div>';
+        }
+        function draggableNodeHelper(event) {
+            return '<div id="draggableNodeHelper">I am a node - drag me to a Layer!</div>';
+        }
+        function sortOutLayerNumber() {
+            return network.layers.length;
+        }
+        function getLayer(name) {
+            for (var i = 0; i < network.layers.length; i++) {
+                if (network.layers[i].name === name) {
+                    return network.layers[i];
+                }
+            }
+            return null;
+        }
+
+        function handleDropOnLayerEvent(event, ui) {
+            var droppable = ui.droppable;
+            var layer = getLayer(droppable.Id);
+            if (layer) {
+                layer.nodes[layer.nodes.length] = createNode(layer.layerNumber);
+            }
+            droppable.append('<div id="node' + layer.layerNumber + '" class="node">Node</div>"');
+        }
+
+        function handleDropOnNetworkEvent(event, ui) {
+            var draggable = ui.draggable;
+//            if (draggable.classList.contains('layerDiv')) {
+                var layerNumber = sortOutLayerNumber();
+                var layer = createLayer(layerNumber, layerNumber === 0, layerNumber === network.layers.length - 1);
+                network.layers[layerNumber] = layer;
+                $('#droppableNetwork').append('<div id="layer' + layerNumber + '" class="layerDiv"> Layer ' + layerNumber + '</div>');
+                $('#layer' + layerNumber).droppable({
+                    drop: handleDropOnLayerEvent
+                });
+//            }
+        }
+    });
+</script>
+<h1>NN Creator</h1>
+
+<div id="content" style="height: 200px;">
+    <div id="layerDraggable" class="draggableLayer">
+        <p>Layer</p>
+    </div>
+    <div id="nodeDraggable" class="draggableNode">
+        <p>Node</p>
+    </div>
+
+</div>
+
+<h3>Network</h3>
+<div id="droppableNetwork">
+    
+</div>
