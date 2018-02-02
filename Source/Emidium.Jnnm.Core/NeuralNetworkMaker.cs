@@ -66,7 +66,7 @@
                 {
                     var input = GetInputs(inputCount, random);
                     double[] desired = mathFunc(input);
-                    neuralNetwork.Train(input, desired);
+                    neuralNetwork.TrainSingle(input, desired);
                 }
             }
         }

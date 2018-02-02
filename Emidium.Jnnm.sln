@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emidium.Jnnm.Web", "Source\Emidium.Jnnm.Web\Emidium.Jnnm.Web.csproj", "{C8970E91-7288-40F6-B348-8D50CCAC3978}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emidium.Jnnm.Core", "Source\Emidium.Jnnm.Core\Emidium.Jnnm.Core.csproj", "{5C7AF5D9-45B7-4705-BDED-A7DE88BAB8E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emidium.Jnnm.CoreTest", "Source\Emidium.Jnnm.CoreTest\Emidium.Jnnm.CoreTest.csproj", "{AAFD3FD5-1CF7-4498-9DF7-F2DC378C3C6B}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8970E91-7288-40F6-B348-8D50CCAC3978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8970E91-7288-40F6-B348-8D50CCAC3978}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8970E91-7288-40F6-B348-8D50CCAC3978}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8970E91-7288-40F6-B348-8D50CCAC3978}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C7AF5D9-45B7-4705-BDED-A7DE88BAB8E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C7AF5D9-45B7-4705-BDED-A7DE88BAB8E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C7AF5D9-45B7-4705-BDED-A7DE88BAB8E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1F2BFAA-596D-4D8E-A112-AB78F834CDCF}
 	EndGlobalSection
 EndGlobal

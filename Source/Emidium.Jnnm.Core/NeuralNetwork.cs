@@ -70,13 +70,27 @@
             }
         }
 
-        public void Train(double[] input, double[] desired)
+        public void TrainSingle(double[] input, double[] desired)
         {
             this.Run(input);
             this.BackPropagate(desired);
             this.Run(input);
             this.LastError = this.CalcError(this.Results(), desired);
             this.ErrorTotal += this.LastError;
+            this.TrainingCount++;
+        }
+    
+        public void Train(List<Tuple<double[], double[]>> dataset)
+        {
+            this.ErrorTotal = 0;
+            foreach (var inputOutputSet in dataset)
+            {
+                this.Run(inputOutputSet.Item1);
+                this.BackPropagate(inputOutputSet.Item2);
+                this.Run(inputOutputSet.Item1);
+                this.LastError = this.CalcError(this.Results(), inputOutputSet.Item2);
+                this.ErrorTotal += this.LastError;
+            }
             this.TrainingCount++;
         }
 
@@ -92,7 +106,7 @@
 
         public double[] Results()
         {
-            return this.LastLayer().Nodes.Select(n => n.Output).ToArray();
+            return thi s.LastLayer().Nodes.Select(n => n.Output).ToArray();
         }
 
         private Layer LastLayer()
@@ -121,32 +135,31 @@
 
         public override string ToString()
         {
-            string result = "NN " + Environment.NewLine;
+            string result = $"NN {Environment.NewLine}";
             foreach (var layer in this.Layers)
             {
-                result += " Layer : " +  layer.LayerIndex  + Environment.NewLine;
+                result += $" Layer : {layer.LayerIndex}{Environment.NewLine}";
 
                 foreach (var node in layer.Nodes)
                 {
-                    result += "  Node : " + node.Code + Environment.NewLine;
-                    result += "      Input  : " + node.Input + Environment.NewLine;
-                    result += "      Output : " + node.Output + Environment.NewLine;
-                    result += "      Delta  : " + node.Delta + Environment.NewLine;
-                    result += "      Bias   : " + node.Bias + Environment.NewLine;
+                    result += $"  Node : {node.Code}{Environment.NewLine}";
+                    result += $"      Input  : {node.Input}{Environment.NewLine}";
+                    result += $"      Output : {node.Output}{Environment.NewLine}";
+                    result += $"      Delta  : {node.Delta}{Environment.NewLine}";
+                    result += $"      Bias   : {node.Bias}{Environment.NewLine}";
                 }
                 foreach (var node in layer.Nodes)
                 {
-                    result += "  Connections : " + node.RightConnections.Count + Environment.NewLine;
-                    result += "      From  : " + node.Code + Environment.NewLine;
+                    result += $"  Connections : {node.RightConnections.Count}{Environment.NewLine}";
+                    result += $"      From  : {node.Code}{Environment.NewLine}";
                     foreach (var rightConnection in node.RightConnections)
                     {
-                        result += "         To          : " + rightConnection.RightNode.Code + Environment.NewLine;
-                        result += "         Weight      : " + rightConnection.Weight + Environment.NewLine;
-                        result += "         WeightDelta : " + rightConnection.WeightDelta + Environment.NewLine;
-                        result += "         PrevDelta   : " + rightConnection.PreviousWeightDelta + Environment.NewLine;
+                        result += $"         To          : {rightConnection.RightNode.Code}{Environment.NewLine}";
+                        result += $"         Weight      : {rightConnection.Weight}{Environment.NewLine}";
+                        result += $"         WeightDelta : {rightConnection.WeightDelta}{Environment.NewLine}";
+                        result += $"         PrevDelta   : {rightConnection.PreviousWeightDelta}{Environment.NewLine}";
                     }
                 }
-
             }
             return result;
         }

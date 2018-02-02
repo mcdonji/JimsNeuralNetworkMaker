@@ -75,7 +75,7 @@
             System.Console.WriteLine("Output before training of [" + string.Join(",", nn.Results()) + "] with error of [" + nn.CalcError(nn.Results(), desired) + "]");
             for (int i = 0; i < 10000; i++)
             {
-                nn.Train(input, desired);
+                nn.TrainSingle(input, desired);
                 if (i % 100 == 0)
                 {
                     System.Console.WriteLine("Result of [" + string.Join(",", nn.Results()) + "] with error of [" + nn.LastError + "]");

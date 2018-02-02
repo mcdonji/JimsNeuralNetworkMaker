@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36b0f962-7876-4b9f-8df2-0bb5eef87fee" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Emidium.Jnnm.sln" afterPath="$PROJECT_DIR$/Emidium.Jnnm.sln" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Console/Program.cs" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Console/Program.cs" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Emidium.Jnnm.Core.csproj" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Emidium.Jnnm.Core.csproj" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetworkMaker.cs" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetworkMaker.cs" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/packages.config" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/packages.config" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/Emidium.Jnnm.CoreTest.csproj" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/Emidium.Jnnm.CoreTest.csproj" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkMakerTest.cs" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkMakerTest.cs" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/packages.config" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/packages.config" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.css" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.css.map" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.min.css" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/bootstrap.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/themes/base/theme.css" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Content/themes/base/theme.css" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Emidium.Jnnm.Web.csproj" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Emidium.Jnnm.Web.csproj" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/_references.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/_references.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/bootstrap.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/bootstrap.min.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-2.2.3.intellisense.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-2.2.3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-2.2.3.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-2.2.3.min.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-ui-1.11.4.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery-ui-1.11.4.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate-vsdoc.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate-vsdoc.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.min.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.min.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.unobtrusive.min.js" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Scripts/jquery.validate.unobtrusive.min.js" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Web.config" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/Web.config" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/packages.config" afterPath="$PROJECT_DIR$/Source/Emidium.Jnnm.Web/packages.config" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="NeuralNetworkTest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+              <folding>
+                <marker date="1517344716953" expanded="true" signature="51:6334" ph="{...}" />
+                <marker date="1517344716953" expanded="false" signature="64:157" ph="..." />
+                <marker date="1517344716953" expanded="true" signature="193:6332" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="264:1430" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="1510:3002" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="2461:2632" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="3088:3815" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="3632:3805" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="3885:4823" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="4334:4624" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="4910:5269" ph="{...}" />
+                <marker date="1517344716953" expanded="true" signature="5334:6326" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetworkMakerTest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkMakerTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515185228488" expanded="true" signature="31:1084" ph="{...}" />
+                <marker date="1515185228488" expanded="false" signature="44:157" ph="..." />
+                <marker date="1515185228488" expanded="true" signature="198:1082" ph="{...}" />
+                <marker date="1515185228488" expanded="true" signature="272:961" ph="{...}" />
+                <marker date="1515185228488" expanded="true" signature="613:891" ph="{...}" />
+                <marker date="1515185228488" expanded="true" signature="1007:1076" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Layer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Layer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+              <folding>
+                <marker date="1515182562272" expanded="true" signature="27:2657" ph="{...}" />
+                <marker date="1515182562272" expanded="false" signature="40:108" ph="..." />
+                <marker date="1515182562272" expanded="true" signature="132:2655" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="430:1023" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="665:1013" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="726:961" ph="/* if (isOutput) ... */" />
+                <marker date="1515182562272" expanded="true" signature="1163:1365" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1228:1355" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1413:1579" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1478:1569" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1646:1794" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1702:1784" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1832:1920" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="1960:2045" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="2115:2303" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="2170:2293" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="2346:2433" ph="{...}" />
+                <marker date="1515182562272" expanded="true" signature="2526:2649" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Enumerable.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA1D621-550E-4B44-9967-1A1E4ED61457/67/94fd26bd/Enumerable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="2456" column="6" lean-forward="false" selection-start-line="2456" selection-start-column="6" selection-end-line="2456" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Node.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <marker date="1515182562285" expanded="true" signature="27:2400" ph="{...}" />
+                <marker date="1515182562285" expanded="false" signature="40:108" ph="..." />
+                <marker date="1515182562285" expanded="true" signature="131:2398" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="918:1308" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="1365:1435" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="1484:1587" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="1627:1843" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="1885:2116" ph="{...}" />
+                <marker date="1515182562285" expanded="true" signature="2183:2392" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransferFunctions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/TransferFunctions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <marker date="1515182562298" expanded="true" signature="27:1072" ph="{...}" />
+                <marker date="1515182562298" expanded="true" signature="83:1070" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetwork.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+              <folding>
+                <marker date="1517424920527" expanded="true" signature="27:6699" ph="{...}" />
+                <marker date="1517424920527" expanded="false" signature="40:108" ph="..." />
+                <marker date="1517424920527" expanded="true" signature="140:6697" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="885:1812" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1015:1165" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1231:1802" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1407:1788" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1492:1770" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1857:2092" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="1968:2047" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="2145:2634" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="2278:2360" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="2419:2624" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="2701:2971" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3043:3502" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3138:3458" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3571:3791" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3664:3755" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3826:3922" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="3957:4030" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4084:4376" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4152:4366" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4225:4352" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4429:4602" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4486:4592" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4645:6239" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4759:6202" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="4903:5347" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="5397:6188" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="5672:6170" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="6299:6519" ph="{...}" />
+                <marker date="1517424920527" expanded="true" signature="6558:6691" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List`1.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/e7/862a5603/List`1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="635" column="6" lean-forward="false" selection-start-line="635" selection-start-column="6" selection-end-line="635" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetworkSpecification.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetworkSpecification.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <folding>
+                <marker date="1515182562281" expanded="true" signature="27:1142" ph="{...}" />
+                <marker date="1515182562281" expanded="false" signature="40:90" ph="..." />
+                <marker date="1515182562281" expanded="true" signature="135:1140" ph="{...}" />
+                <marker date="1515182562281" expanded="true" signature="456:518" ph="{...}" />
+                <marker date="1515182562281" expanded="true" signature="625:882" ph="{...}" />
+                <marker date="1515182562281" expanded="true" signature="750:826" ph="{...}" />
+                <marker date="1515182562281" expanded="true" signature="928:1002" ph="{...}" />
+                <marker date="1515182562281" expanded="true" signature="1045:1134" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/e7/862a5603/List`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkMakerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetworkSpecification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/TransferFunctions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA1D621-550E-4B44-9967-1A1E4ED61457/67/94fd26bd/Enumerable.cs" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs" />
+        <option value="$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="2418" />
+    <option name="height" value="1331" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Emidium.Jnnm (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Emidium.Jnnm (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Emidium.Jnnm.CoreTest" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36b0f962-7876-4b9f-8df2-0bb5eef87fee" name="Default" comment="" />
+      <created>1517100032398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517100032398</updated>
+      <workItem from="1517100035003" duration="11391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11391000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1552" height="850" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2533512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+            <startOffsets>
+              <startOffset value="3229" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="3262" />
+            </endOffsets>
+          </properties>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs</url>
+          <line>35</line>
+          <properties documentPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+            <startOffsets>
+              <startOffset value="1384" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1420" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs</url>
+          <line>54</line>
+          <properties documentPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+            <startOffsets>
+              <startOffset value="2349" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2381" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+            <startOffsets>
+              <startOffset value="1519" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1520" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs</url>
+          <line>63</line>
+          <properties documentPath="$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+            <startOffsets>
+              <startOffset value="2659" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2723" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>xorNn.ToString()</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/TransferFunctions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <marker date="1515182562298" expanded="true" signature="27:1072" ph="{...}" />
+            <marker date="1515182562298" expanded="true" signature="83:1070" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E1F863D9-9421-4006-AED0-BD17AB690B95/e7/862a5603/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="635" column="6" lean-forward="false" selection-start-line="635" selection-start-column="6" selection-end-line="635" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetworkSpecification.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <marker date="1515182562281" expanded="true" signature="27:1142" ph="{...}" />
+            <marker date="1515182562281" expanded="false" signature="40:90" ph="..." />
+            <marker date="1515182562281" expanded="true" signature="135:1140" ph="{...}" />
+            <marker date="1515182562281" expanded="true" signature="456:518" ph="{...}" />
+            <marker date="1515182562281" expanded="true" signature="625:882" ph="{...}" />
+            <marker date="1515182562281" expanded="true" signature="750:826" ph="{...}" />
+            <marker date="1515182562281" expanded="true" signature="928:1002" ph="{...}" />
+            <marker date="1515182562281" expanded="true" signature="1045:1134" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9DA1D621-550E-4B44-9967-1A1E4ED61457/67/94fd26bd/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="2456" column="6" lean-forward="false" selection-start-line="2456" selection-start-column="6" selection-end-line="2456" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkMakerTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515185228488" expanded="true" signature="31:1084" ph="{...}" />
+            <marker date="1515185228488" expanded="false" signature="44:157" ph="..." />
+            <marker date="1515185228488" expanded="true" signature="198:1082" ph="{...}" />
+            <marker date="1515185228488" expanded="true" signature="272:961" ph="{...}" />
+            <marker date="1515185228488" expanded="true" signature="613:891" ph="{...}" />
+            <marker date="1515185228488" expanded="true" signature="1007:1076" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.CoreTest/NeuralNetworkTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding>
+            <marker date="1517344716953" expanded="true" signature="51:6334" ph="{...}" />
+            <marker date="1517344716953" expanded="false" signature="64:157" ph="..." />
+            <marker date="1517344716953" expanded="true" signature="193:6332" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="264:1430" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="1510:3002" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="2461:2632" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="3088:3815" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="3632:3805" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="3885:4823" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="4334:4624" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="4910:5269" ph="{...}" />
+            <marker date="1517344716953" expanded="true" signature="5334:6326" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Node.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <marker date="1515182562285" expanded="true" signature="27:2400" ph="{...}" />
+            <marker date="1515182562285" expanded="false" signature="40:108" ph="..." />
+            <marker date="1515182562285" expanded="true" signature="131:2398" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="918:1308" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="1365:1435" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="1484:1587" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="1627:1843" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="1885:2116" ph="{...}" />
+            <marker date="1515182562285" expanded="true" signature="2183:2392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/Layer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <marker date="1515182562272" expanded="true" signature="27:2657" ph="{...}" />
+            <marker date="1515182562272" expanded="false" signature="40:108" ph="..." />
+            <marker date="1515182562272" expanded="true" signature="132:2655" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="430:1023" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="665:1013" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="726:961" ph="/* if (isOutput) ... */" />
+            <marker date="1515182562272" expanded="true" signature="1163:1365" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1228:1355" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1413:1579" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1478:1569" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1646:1794" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1702:1784" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1832:1920" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="1960:2045" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="2115:2303" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="2170:2293" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="2346:2433" ph="{...}" />
+            <marker date="1515182562272" expanded="true" signature="2526:2649" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Emidium.Jnnm.Core/NeuralNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+          <folding>
+            <marker date="1517424920527" expanded="true" signature="27:6699" ph="{...}" />
+            <marker date="1517424920527" expanded="false" signature="40:108" ph="..." />
+            <marker date="1517424920527" expanded="true" signature="140:6697" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="885:1812" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1015:1165" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1231:1802" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1407:1788" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1492:1770" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1857:2092" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="1968:2047" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="2145:2634" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="2278:2360" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="2419:2624" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="2701:2971" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3043:3502" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3138:3458" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3571:3791" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3664:3755" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3826:3922" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="3957:4030" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4084:4376" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4152:4366" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4225:4352" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4429:4602" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4486:4592" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4645:6239" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4759:6202" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="4903:5347" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="5397:6188" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="5672:6170" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="6299:6519" ph="{...}" />
+            <marker date="1517424920527" expanded="true" signature="6558:6691" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
